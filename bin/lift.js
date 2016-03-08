@@ -1,2 +1,3 @@
 require('babel-register')
-require('..')
+require('../build/tasks/serve')
+// require('..')

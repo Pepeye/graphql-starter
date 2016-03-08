@@ -3,7 +3,7 @@ import graphqlHTTP from 'express-graphql'
 import logger from 'morgan'
 import favicon from 'serve-favicon'
 import bodyParser from 'body-parser'
-import config from '../config'
+import config from '../build/config'
 import _debug from 'debug'
 import { Book } from './models'
 
