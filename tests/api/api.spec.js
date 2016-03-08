@@ -39,5 +39,11 @@ describe('REST API tests', () => {
 
       done()
     })
+
+    it('random', (done) => {
+      expect(true).to.be.true
+      expect('200').to.equal('200')
+      done()
+    })
   })
 })

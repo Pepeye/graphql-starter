@@ -13,6 +13,6 @@ before(() => {
 })
 
 after(() => {
-  Book.query('MATCH (n) DETACH DELETE n')
+  Book.query('MATCH (n:Book) DETACH DELETE n')
   console.log('[INFO]', 'run AFTER all tests')
 })
