@@ -7,9 +7,7 @@
     "start": "npm run dev",
     "dev": "better-npm-run dev",
     "test": "better-npm-run test",
-    "test:watch": "npm run test -- --watch",
-    "spec": "mocha './tests/**/*.spec.js' --opts 'tests/mocha.opts'",
-    "spec:watch": "npm run spec -- --watch"
+    "test:watch": "npm run test -- --watch"
   },
   "bin": {
     "tenshi": "bin/lift"
