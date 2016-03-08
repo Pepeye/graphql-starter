@@ -9,14 +9,14 @@ describe('REST API tests', () => {
     it('retrieves data at: /book/:uuid', async () => {
       let expected = Book1.title
       let res = await request(app)
-              .get('/book/088d9b8b-42d9-4add-9971-33000302a78c')
+              .get(`/book/${Book1.uuid}`)
               .expect(200)
       let result = JSON.parse(res.text)
 
       expect(result[0].properties.title).to.deep.equal(expected)
 
       await request(app)
-              .get('/book/088d9b8b-42d9-4add-9971-33000302a78c')
+              .get(`/book/${Book1.uuid}`)
               .expect(200)
               .then(res => { expect(result[0].properties.title).to.deep.equal(expected) })
               .catch(err => { expect(err).to.not.exist })

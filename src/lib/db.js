@@ -4,7 +4,7 @@ const dbconf = {
   url: 'http://localhost:7474',
   auth: {
     username: process.env.NEO4J_USER || 'neo4j',
-    password: process.env.NEO4J_PASS || 'neo4j'
+    password: process.env.NEO4J_PASS || '4hqrt3'
   }
 }
 

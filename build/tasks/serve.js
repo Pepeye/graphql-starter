@@ -3,6 +3,8 @@ import app from '../../src/server'
 import _debug from 'debug'
 
 const debug = _debug('api:server')
+const PORT = config.port
+const HOST = config.host
 
 app.listen(config.port, config.host, () => {
   debug(`Starting server`)
@@ -10,8 +12,8 @@ app.listen(config.port, config.host, () => {
     Server Started
     =============================
     Env  : ${process.env.NODE_ENV}
-    host : ${config.host}
-    Port : ${process.env.PORT}
+    host : ${HOST}
+    Port : ${PORT}
     -----------------------------
    `)
 })
